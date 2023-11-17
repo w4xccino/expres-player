@@ -1,21 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Express - En Vivo</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/lunaradio-sincors.js"></script>
+    <!-- Otros elementos del head pueden ir aquí -->
+</head>
+<style>
+body {
+margin: 0,
+padding: 0,
+}
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/lunaradio-sincors.js"></script>
+</style>
+<body>
 
-<div id="lunaradio" style="width:100%; height:100%;background: #000000 url(js/portada.jpg) bottom / cover no-repeat;">loading...</div>			
 
+<div id="lunaradio" style="width:100vw; height:100vh; background: #000000 url(js/portada.jpg) bottom / cover no-repeat;">loading...</div>
 <script>
 $("#lunaradio").lunaradio({
 userinterface: "big", 
 backgroundcolor: "",
 fontcolor: "#ffffff",
-hightlightcolor: "#ffffff",
-fontname: "Calibri",
-googlefont: "Unica+One&display=swap", 
-fontratio: "0.4", 
+hightlightcolor: "#f00000",
+fontname: "Open Sans",
+googlefont: "Open+Sans&display=swap", 
+fontratio: "0.6", 
 radioname: "Radio Express", 
 scroll: "true",
-coverimage: "js/logo.png",
+coverimage: "js/logo.jpg",
 onlycoverimage: "false",
 coverstyle: "animated",
 usevisualizer: "real", 
@@ -40,3 +54,6 @@ debug: "false",
 autoplay: "true"
 });
 </script>
+
+</body>
+</html>
